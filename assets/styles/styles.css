@@ -1,0 +1,32 @@
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(-45deg, #1e3c72, #2a5298, #4a00e0, #8e2de2);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.floating {
+    animation: float 3s ease-in-out infinite;
+}
